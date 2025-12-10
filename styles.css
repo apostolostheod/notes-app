@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #202040;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+h1 span {
+  color: #15e08a;
+}
+
+.note-input {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+textarea {
+  width: 100%;
+  height: 140px;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  resize: none;
+}
+
+button {
+  padding: 12px;
+  background: #15e08a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #12c67a;
+}
+
+.notes-container {
+  margin-top: 30px;
+  display: grid;
+  gap: 20px;
+}
+
+.note {
+  background: #fff;
+  color: #333;
+  padding: 18px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.note p {
+  white-space: pre-wrap;
+}
+
+.note .actions {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.action-btn {
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.action-btn:hover {
+  background: #efefef;
+}
+
+.notes-container div {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease;
+}
+
+.notes-container div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.notes-container p {
+  font-size: 16px;
+  color: #333;
+  word-wrap: break-word;
+}
+
+.notes-container button {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.notes-container button:hover {
+  background-color: #45a049;
+}
+
+.notes-container button:nth-child(3) {
+  background-color: #f44336;
+}
+
+.notes-container button:nth-child(3):hover {
+  background-color: #e53935;
+}
+
+.notes-container button:nth-child(2) {
+  background-color: #2196f3;
+}
+
+.notes-container button:nth-child(2):hover {
+  background-color: #1976d2;
+}
